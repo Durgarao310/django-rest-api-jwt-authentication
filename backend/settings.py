@@ -170,11 +170,7 @@ STATICFILES_DIRS = (
 )
 
 
-from datetime import timedelta
 
-JWT_AUTH ={
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'user.views.jwt_response_payload_handler'
-}
 CORS_ORIGIN_ALLOW_ALL = True
 
 
@@ -189,4 +185,3 @@ ALLOWED_HOSTS = '*'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
